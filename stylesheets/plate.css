@@ -1,0 +1,47 @@
+/* Plates — contemplation pages: visually isolated taxonomies for staring at (see LIBRARY.md).
+   Colors ride Material's theme variables, so plates work in light and dark automatically. */
+
+.plate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.plate-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  padding: 1rem 0.6rem 0.85rem;
+  text-align: center;
+}
+
+.plate-card svg {
+  display: block;
+  margin: 0 auto 0.55rem;
+  color: var(--md-default-fg-color);
+}
+
+.plate-card strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.plate-card small {
+  display: block;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+
+/* Dashed cards: specification modes / wildcards — not performable material. */
+.plate-card.spec {
+  border-style: dashed;
+}
+
+.plate-caption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  margin: -0.6rem 0 1.2rem;
+}
