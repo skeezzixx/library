@@ -1,0 +1,1458 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A reading library distilled from the knowledge commons.">
+      
+      
+      
+        <link rel="canonical" href="https://skeezzixx.github.io/library/dance/synthetic/motion-capture/">
+      
+      
+        <link rel="prev" href="../../systems/latent-spaces/">
+      
+      
+        <link rel="next" href="../../plates/movement-alphabet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>The captured body: video to skeleton - The Anatomy Theatre</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/plate.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <meta name="robots" content="noindex, nofollow">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-captured-body-video-to-skeleton-to-animation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The Anatomy Theatre" class="md-header__button md-logo" aria-label="The Anatomy Theatre" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Anatomy Theatre
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The captured body: video to skeleton
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The Anatomy Theatre" class="md-nav__button md-logo" aria-label="The Anatomy Theatre" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The Anatomy Theatre
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Movement language
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Movement language
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/codified-vocabularies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codified vocabularies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/technique-as-vocabulary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technique as vocabulary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/composition-craft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The craft: composition best practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/building-a-gamut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building a gamut
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/effort-and-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effort and quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chance, systems, algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chance, systems, algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systems/chance-and-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chance and rule-based choreography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systems/gamut-plus-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The gamut+rules architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systems/latent-spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choreographing in latent spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The synthetic dancer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The synthetic dancer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The captured body: video to skeleton
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The captured body: video to skeleton
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-interchange-body-smpl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The interchange body: SMPL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-one-2d-keypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage one: 2D keypoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-two-the-lift-and-the-world-grounding-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage two: the lift, and the world-grounding problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-dance-does-to-all-of-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What dance does to all of this
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-clever-part-making-it-move-like-a-person" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The clever part: making it move like a person
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-five-retargeting-the-quiet-quality-killer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage five: retargeting, the quiet quality-killer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-free-stack-summarized" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The free stack, summarized
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-opens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this opens
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plates
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plates/movement-alphabet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I · The Movement Alphabet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-interchange-body-smpl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The interchange body: SMPL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-one-2d-keypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage one: 2D keypoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-two-the-lift-and-the-world-grounding-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage two: the lift, and the world-grounding problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-dance-does-to-all-of-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What dance does to all of this
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-clever-part-making-it-move-like-a-person" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The clever part: making it move like a person
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-five-retargeting-the-quiet-quality-killer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage five: retargeting, the quiet quality-killer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-free-stack-summarized" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The free stack, summarized
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-opens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this opens
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<hr />
+<p>title: The captured body: video to skeleton to animation
+summary: The state of the art and the free tooling for extracting 3D dance from video — and the clever repairs (priors, physics) that make the result look alive.
+covers:
+  - ml-video-to-3d-dance-pose-landscape
+  - ml-physics-and-priors-motion-cleanup
+  - data-free-mocap-tooling-2026</p>
+<hr />
+<h1 id="the-captured-body-video-to-skeleton-to-animation">The captured body: video to skeleton to animation<a class="headerlink" href="#the-captured-body-video-to-skeleton-to-animation" title="Permanent link">&para;</a></h1>
+<p>Part VII begins here, pulled forward by a practical question: if you point a camera at a dancer
+— or at seventy years of dance footage — what can you actually extract, with what tools, at
+what cost, and how do you make the extracted skeleton <em>move like a person</em> instead of like a
+haunted marionette? This chapter maps the pipeline end to end as it stands in mid-2026, with
+particular attention to the two things worth caring about most: what's genuinely free, and the
+increasingly clever machinery — learned priors, physics simulation — that separates plausible
+animation from sliding, jittering approximation.<sup id="fnref:0"><a class="footnote-ref" href="#fn:0">1</a></sup></p>
+<p>The pipeline has five stages, and it helps to name them up front, because tools slot into
+stages, not into the whole:</p>
+<blockquote>
+<p><strong>video → 2D keypoints → 3D body in world space → cleanup → retarget to a rig → render</strong></p>
+</blockquote>
+<h2 id="the-interchange-body-smpl">The interchange body: SMPL<a class="headerlink" href="#the-interchange-body-smpl" title="Permanent link">&para;</a></h2>
+<p>First, the format that makes the ecosystem hang together. Nearly all current research emits
+<strong>SMPL</strong> (or its hands-and-face extension <strong>SMPL-X</strong>): a parametric human body — a fixed-topology
+mesh driven by per-joint rotations plus a handful of shape parameters. It matters to you for one
+reason: it is the <em>lingua franca</em>. Pose estimators emit it, motion generators consume it,
+converters to FBX and Blender exist and are boring. When evaluating any tool in this space, "can
+it get to SMPL?" is the portability question, the way "can it export stems?" is in audio.</p>
+<h2 id="stage-one-2d-keypoints">Stage one: 2D keypoints<a class="headerlink" href="#stage-one-2d-keypoints" title="Permanent link">&para;</a></h2>
+<p>Per-frame 2D pose detection is mature, fast, and free — MediaPipe's 33-landmark body,
+and the RTMPose/DWPose family that produces the colored-limb skeletons your video-generation
+stack already consumes as control input. Two things worth knowing: 2D is <em>done</em> as a research
+problem for ordinary footage (the interesting failures are all downstream), and 2D alone is
+already useful — a DWPose skeleton drives pose-conditioned video generation directly, no 3D
+lift required. The 3D stages below exist for when you need the <em>body</em>, not just the picture of
+one: editing, retargeting, physics, or building a motion corpus.</p>
+<h2 id="stage-two-the-lift-and-the-world-grounding-problem">Stage two: the lift, and the world-grounding problem<a class="headerlink" href="#stage-two-the-lift-and-the-world-grounding-problem" title="Permanent link">&para;</a></h2>
+<p>Lifting 2D detections to a 3D body was never really the hard part per-frame; the hard part is
+<strong>world grounding</strong> — recovering the global trajectory and orientation so that a dancer who
+travels, turns, and jumps does so <em>in the world</em> instead of swimming in place at the camera's
+origin. This is precisely the dance-relevant half: travel and facing are choreography.</p>
+<p>The state of the art (single ordinary camera, no markers, no suit):</p>
+<ul>
+<li><strong>WHAM</strong> (CVPR 2024) made world grounding respectable — motion context plus learned
+  foot-contact cues to pin trajectory to the ground.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">2</a></sup></li>
+<li><strong>GVHMR</strong> (SIGGRAPH Asia 2024; TPAMI 2026) is the current default. Its trick is a coordinate
+  system: predict pose in <em>gravity-view coordinates</em> — a frame defined by gravity plus the
+  camera ray, uniquely inferable per image — which removes an ambiguity the network otherwise
+  wastes capacity resolving. It emits SMPL-X, grounds camera-space motion more accurately than
+  WHAM, and its core network is roughly seven times faster (~0.28 s vs ~2.0 s); on the standard
+  per-pose accuracy benchmark the two are within a fraction of a millimeter.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup></li>
+<li><strong>OnlineHMR</strong> (CVPR 2026) does the same job <em>causally</em> — streaming, for live settings.</li>
+</ul>
+<p>All of this is research code: free on GitHub, real to run (a GPU, a Python environment, no
+support desk), and worth it when you want the best monocular result on footage you don't
+control — archival dance video being the canonical case.</p>
+<p><strong>When you do control the room, triangulate instead.</strong> Multiple cheap cameras beat one clever
+network. <strong>FreeMocap</strong> — free and open source — turns two or more ordinary webcams into a
+markerless rig: MediaPipe's 553 landmarks per frame (body, both hands, face) triangulated into
+3D, exported to native Blender, FBX, or CSV; its April 2026 release added reprojection-outlier
+rejection, so one badly placed camera no longer corrupts the whole solve.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">4</a></sup> Its sibling
+<strong>Pose2Sim</strong> takes any camera mix (phones, GoPros) into an OpenSim biomechanical skeleton —
+the tool when joint kinematics need to be <em>right</em>, not just plausible-looking.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">5</a></sup></p>
+<h2 id="what-dance-does-to-all-of-this">What dance does to all of this<a class="headerlink" href="#what-dance-does-to-all-of-this" title="Permanent link">&para;</a></h2>
+<p>Dance is close to a worst case for capture, and the failure modes are specific enough to plan
+around:<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">6</a></sup></p>
+<ul>
+<li><strong>Floorwork breaks the priors.</strong> Standing-biased pose priors and foot-contact heuristics
+  misfire when weight is on the back, side, or hands — the same standing bias the notation
+  systems carry, now baked into models trained on walking-heavy data. Rolls and inversions are
+  where monocular methods hallucinate hardest; multi-camera capture is the honest fix.</li>
+<li><strong>Spins flip orientation.</strong> Left/right ambiguity under fast rotation produces the
+  characteristic snap where the body turns 180° between frames. (Recall that near-symmetric
+  skeletons carry limb identity almost entirely in subtle appearance cues — at speed, those
+  cues blur away.)</li>
+<li><strong>Fast motion blurs and jumps.</strong> Large inter-frame displacement defeats tracking; power
+  moves defeat it so thoroughly that BRACE — the breakdancing dataset — had to be partly
+  annotated by hand <em>because</em> automatic capture failed on exactly the material it exists to
+  cover. Shoot 60 fps or better for anything percussive.</li>
+<li><strong>Costume occludes.</strong> Skirts, coats, long hair, hats — everything the staged-body chapters
+  will celebrate is an occlusion generator. Capture passes want fitted clothing; wardrobe is a
+  render-time decision, which pose-conditioned video generation happily accommodates.</li>
+</ul>
+<p>The standard benchmark, incidentally, is <strong>AIST++</strong>: 5.2 hours, 1,408 sequences, ten genres,
+multi-view with known cameras — worth knowing both as a corpus and as the substrate most
+music-to-dance generation is trained on.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">7</a></sup></p>
+<h2 id="the-clever-part-making-it-move-like-a-person">The clever part: making it move like a person<a class="headerlink" href="#the-clever-part-making-it-move-like-a-person" title="Permanent link">&para;</a></h2>
+<p>Raw output from every one of these systems shares a look: feet that skate, joints that jitter,
+poses that are individually fine and collectively boneless. The repair techniques are where the
+field has gotten genuinely clever, and they sort into <strong>three tiers by what the fix can see</strong> —
+a tiering worth internalizing because it recurs everywhere in this territory.</p>
+<p><strong>Tier one: geometric patches.</strong> Detect foot-contact frames from velocity and height, then pin
+the foot with inverse kinematics for the contact's duration; filter the jitter. Cheap, local,
+ships as a checkbox in commercial tools ("foot locking"). It fixes the single most visible
+artifact and nothing else — and a pin that fights the data can buy you a knee pop in exchange
+for the slide.</p>
+<p><strong>Tier two: learned priors — denoising by projection.</strong> Train a generative model of how humans
+actually move — VPoser for single poses, HuMoR for whole trajectories, motion-diffusion models
+as the current generation — then pull noisy estimates toward what the model believes.<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">8</a></sup>
+Readers of the <a href="../../systems/latent-spaces/">latent-spaces chapter</a> will recognize this
+instantly: it is <em>the manifold, used as a repair strategy</em> — off-manifold capture gets
+projected back onto the thin surface of plausible human movement. And it inherits the
+manifold's caveat with teeth: a prior is only as good as its corpus's coverage, so a prior
+trained on walking-heavy mocap will "correct" your floorwork toward standing. For dance, check
+what the prior was fed before letting it edit.</p>
+<p><strong>Tier three: physics — legalization by embodiment.</strong> The deepest fix, and the one most worth
+understanding. Train a reinforcement-learning controller that drives a <em>simulated</em> humanoid —
+mass, joint limits, friction, gravity — to track your noisy reference motion: the DeepMimic
+line (2018) through AMP to <strong>PHC</strong> (Perpetual Humanoid Control), the current workhorse, which
+tracks large noisy corpora robustly.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">9</a></sup> The output is whatever the simulated body actually
+did — and therefore feet cannot slide (friction is real), momentum is conserved, balance is
+kept or visibly lost. Physics repairs what the other tiers <em>cannot even represent</em>: forces,
+weight, contact — precisely the fields the <a href="../../language/building-a-gamut/">gamut chapter</a>
+called the treacherous ones, and pedagogy's root cause of transition failure. Seen from this
+subject's angle, tier three is the <a href="../../systems/gamut-plus-rules/">legality graph</a> gone
+continuous: <strong>simulation as a checker that cannot be argued with.</strong> The costs: an RL training
+loop, and a subtle one — the controller is itself a performer with an accent, and extreme
+stylization comes back slightly flattened. Sound familiar? It's the LifeForms lesson again:
+every tool's easy path shows up in the output.</p>
+<p>The tiers compose — prior-then-physics is the strong pipeline — and choosing by failure mode
+keeps it cheap: skating feet, tier one; jitter and odd poses, tier two; impossible dynamics or
+contact-rich floorwork, tier three.</p>
+<p><strong>And there's an interactive version of the whole idea.</strong> <em>Cascadeur</em> — a standalone keyframe
+animator with a genuinely usable free tier — packages the priors <em>inside the authoring loop</em>
+rather than as after-the-fact repair: AutoPosing completes a natural pose from a few dragged
+handles (a learned pose prior as a direct-manipulation tool), and AutoPhysics nudges keyframed
+motion toward ballistic and momentum correctness while preserving the animator's intent.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">10</a></sup>
+It is, in this subject's vocabulary, a human <a href="../../systems/gamut-plus-rules/">gate</a> <em>with a
+physics-literate assistant</em> — worth knowing even if your pipeline is mostly generative, because
+it's the fastest way to hand-fix the ten seconds the pipeline got wrong.</p>
+<h2 id="stage-five-retargeting-the-quiet-quality-killer">Stage five: retargeting, the quiet quality-killer<a class="headerlink" href="#stage-five-retargeting-the-quiet-quality-killer" title="Permanent link">&para;</a></h2>
+<p>Captured motion lands on your character through <strong>retargeting</strong> — mapping one skeleton's
+motion onto another's proportions — and this unglamorous step is where free pipelines usually
+lose their realism. Different limb lengths shift contact timing; a clean capture retargeted
+carelessly skates again. The free path is settled: Blender (with Rokoko's free plugin or
+native tooling) and Mixamo for auto-rigging; Cascadeur's retargeting sits in its paid tier.
+Budget a cleanup pass after <em>every</em> retarget, and treat rig choice as an aesthetic decision —
+proportions are style, as anyone who has watched the same motion on two differently-built
+dancers already knows.</p>
+<h2 id="the-free-stack-summarized">The free stack, summarized<a class="headerlink" href="#the-free-stack-summarized" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Stage</th>
+<th>What it does</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MediaPipe / DWPose</td>
+<td>2D</td>
+<td>keypoints; VACE control skeletons</td>
+<td>free</td>
+</tr>
+<tr>
+<td>GVHMR / WHAM / OnlineHMR</td>
+<td>3D lift</td>
+<td>world-grounded SMPL(-X) from one video</td>
+<td>free (research code, GPU)</td>
+</tr>
+<tr>
+<td>FreeMocap</td>
+<td>3D multi-cam</td>
+<td>webcams → triangulated 3D → Blender/FBX</td>
+<td>free, open source</td>
+</tr>
+<tr>
+<td>Pose2Sim</td>
+<td>3D multi-cam</td>
+<td>biomechanics-grade kinematics</td>
+<td>free, open source</td>
+</tr>
+<tr>
+<td>Rokoko Vision</td>
+<td>cloud lift</td>
+<td>video → FBX, plugins for Blender/Unity/UE</td>
+<td>free ≤15 s clips</td>
+</tr>
+<tr>
+<td>DeepMotion</td>
+<td>cloud lift</td>
+<td>video → FBX, foot-lock modes</td>
+<td>free ~60 s/month</td>
+</tr>
+<tr>
+<td>Cascadeur</td>
+<td>assist/author</td>
+<td>AutoPosing, AutoPhysics keyframing</td>
+<td>free tier; Pro ~$396/yr</td>
+</tr>
+<tr>
+<td>Blender + Mixamo</td>
+<td>rig/retarget</td>
+<td>auto-rig, retarget, render</td>
+<td>free</td>
+</tr>
+</tbody>
+</table>
+<p>(Caps and prices verified August 2026; this table is the rotting kind of knowledge — expect
+drift within a year.)</p>
+<h2 id="what-this-opens">What this opens<a class="headerlink" href="#what-this-opens" title="Permanent link">&para;</a></h2>
+<p>Two doors, both of which later chapters walk through. Capture turns <em>footage into corpus</em> —
+the raw material for learned movement spaces and for the unsupervised gesture-discovery program
+(chapter 10's research sweep, coming) starts as exactly these skeletons. And capture turns
+<em>performance into control signal</em>: a cleaned 3D take, re-rendered from any angle through the
+pose-conditioned video pipeline, is the bridge between a real dancer's phrasing and a synthetic
+dancer's body — the subject of the rendering chapter ahead.</p>
+<details class="note">
+<summary>Field notes</summary>
+<p>This chapter renders three commons notes researched for it on 2026-08-18 (the library's
+research-first rule: findings land in <code>notes/</code> with sources, then render here):
+<code>ml-video-to-3d-dance-pose-landscape</code>, <code>ml-physics-and-priors-motion-cleanup</code>,
+<code>data-free-mocap-tooling-2026</code>.</p>
+</details>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:0">
+<p>Scope note: this chapter covers markerless (video-based) capture, which is where the
+action and the zero budgets are. Optical marker systems (Vicon, OptiTrack) and IMU suits
+(Xsens, Rokoko Smartsuit) remain the studio-grade options — better data, four-to-six
+figures or a wearable, and out of scope here.&#160;<a class="footnote-backref" href="#fnref:0" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:1">
+<p><a href="https://arxiv.org/abs/2312.07531">WHAM — Reconstructing World-grounded Humans with Accurate 3D Motion</a> (CVPR 2024).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://zju3dv.github.io/gvhmr/">GVHMR — World-Grounded Human Motion Recovery via Gravity-View Coordinates</a> (SIGGRAPH Asia 2024; TPAMI 2026); <a href="https://github.com/zju3dv/GVHMR">code</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://freemocap.org/">FreeMocap</a> — free, open-source markerless capture.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://github.com/perfanalytics/pose2sim">Pose2Sim</a> — markerless kinematics to OpenSim.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://arxiv.org/abs/2401.02383">Survey of 3D human pose and shape estimation for contemporary dance</a>; <a href="https://arxiv.org/abs/2207.10120">BRACE — the breakdancing competition dataset</a>.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://google.github.io/aichoreographer/">AIST++ / AI Choreographer</a>.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>HuMoR (ICCV 2021) is the standard motion-prior reference; VPoser ships with SMPL-X
+(CVPR 2019).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>DeepMimic (SIGGRAPH 2018) → AMP (SIGGRAPH 2021) → PHC (ICCV 2023), with
+guided-diffusion humanoid policies as the 2025–26 research edge.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p><a href="https://cascadeur.com/">Cascadeur</a> — free tier for personal use; retargeting in Pro.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "toc.follow", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
