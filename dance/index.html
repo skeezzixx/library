@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="../stylesheets/plate.css">
     
+      <link rel="stylesheet" href="../stylesheets/library.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -96,7 +98,7 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="The Anatomy Theatre" class="md-header__button md-logo" aria-label="The Anatomy Theatre" data-md-component="logo">
       
@@ -201,13 +203,65 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Dance
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -221,8 +275,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="The Anatomy Theatre" class="md-nav__button md-logo" aria-label="The Anatomy Theatre" data-md-component="logo">
       
@@ -298,8 +354,14 @@
     
     
     
+      
+        
+        
+      
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
@@ -325,7 +387,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -370,6 +432,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -385,7 +450,7 @@
   <span class="md-ellipsis">
     
   
-    The territory
+    I · The territory
   
 
     
@@ -401,7 +466,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    The territory
+    I · The territory
   
 
           </label>
@@ -468,6 +533,9 @@
       
     
     
+    
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -947,6 +1015,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -962,7 +1033,7 @@
   <span class="md-ellipsis">
     
   
-    Movement language
+    II · Movement language
   
 
     
@@ -978,7 +1049,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Movement language
+    II · Movement language
   
 
           </label>
@@ -1176,6 +1247,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1191,7 +1265,7 @@
   <span class="md-ellipsis">
     
   
-    Writing it down
+    III · Writing it down
   
 
     
@@ -1207,7 +1281,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Writing it down
+    III · Writing it down
   
 
           </label>
@@ -1295,6 +1369,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1310,7 +1387,7 @@
   <span class="md-ellipsis">
     
   
-    Music and dance
+    IV · Music and dance
   
 
     
@@ -1326,7 +1403,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Music and dance
+    IV · Music and dance
   
 
           </label>
@@ -1446,6 +1523,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1461,7 +1541,7 @@
   <span class="md-ellipsis">
     
   
-    Chance, systems, algorithms
+    V · Chance, systems, algorithms
   
 
     
@@ -1477,7 +1557,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Chance, systems, algorithms
+    V · Chance, systems, algorithms
   
 
           </label>
@@ -1651,6 +1731,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1666,7 +1749,7 @@
   <span class="md-ellipsis">
     
   
-    The staged body
+    VI · The staged body
   
 
     
@@ -1682,7 +1765,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    The staged body
+    VI · The staged body
   
 
           </label>
@@ -1830,6 +1913,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1845,7 +1931,7 @@
   <span class="md-ellipsis">
     
   
-    The synthetic dancer
+    VII · The synthetic dancer
   
 
     
@@ -1861,7 +1947,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    The synthetic dancer
+    VII · The synthetic dancer
   
 
           </label>
@@ -2079,6 +2165,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -2095,7 +2184,7 @@
   <span class="md-ellipsis">
     
   
-    The shelf
+    VIII · The shelf
   
 
     
@@ -2117,7 +2206,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    The shelf
+    VIII · The shelf
   
 
           </label>
@@ -2819,6 +2908,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -2972,24 +3064,28 @@ movement and the systems for writing them down, the strange marriage with music,
 procedures and algorithms, the dressed and lit body on a stage, and the fully synthetic dancer —
 but that solved problem is its center of gravity, and the chapters radiate out from it.</p>
 <h2 id="the-shape-of-the-subject">The shape of the subject<a class="headerlink" href="#the-shape-of-the-subject" title="Permanent link">&para;</a></h2>
-<p>Eight parts, all written. Chapters are self-contained — you can read any one cold — but within a part they're
-ordered, and the parts themselves zoom from the territory down to the machinery:</p>
+<p>Eight parts, all written. Chapters are self-contained — you can read any one cold — but within a
+part they're ordered, and the parts themselves zoom from the territory down to the machinery.
+Each chapter opens with a reading strip (its part, its place in the part, previous and next) and
+closes with previous/next links, so the whole subject reads front to back from any entry point.
+The part headings below jump to each part's first page:</p>
 <ul>
-<li><strong>I · The territory</strong> — what dance is and what it's <em>for</em>; a world atlas of everything anyone
-  calls dance; ballet's long history; the modern revolt; street and club styles. <em>(complete)</em></li>
-<li><strong>II · Movement language</strong> — how vocabularies of movement get built, taught, described, and —
-  the open frontier — discovered by machines from video. <em>(complete)</em></li>
-<li><strong>III · Writing it down</strong> — Labanotation, Benesh, motif notation; video and digital scores.
-  <em>(complete)</em></li>
-<li><strong>IV · Music and dance</strong> — both directions of the marriage: choreographers using music,
-  composers writing for bodies. <em>(complete)</em></li>
-<li><strong>V · Chance, systems, algorithms</strong> — Cunningham to code: the generative tradition and the
-  architecture it converged on. <em>(complete)</em></li>
-<li><strong>VI · The staged body</strong> — costume, props, environment, light. <em>(complete)</em></li>
-<li><strong>VII · The synthetic dancer</strong> — the plausible body, motion capture, movement generation,
-  rendering, the pipeline end to end. <em>(complete)</em></li>
-<li><strong>VIII · The shelf</strong> — reference pages on the choreographers themselves. <em>(first wave
-  complete: 24 pages)</em></li>
+<li><strong><a href="territory/what-dance-is/">I · The territory</a></strong> — what dance is and what it's <em>for</em>; a
+  world atlas of everything anyone calls dance; ballet's long history; the modern revolt; street
+  and club styles.</li>
+<li><strong><a href="language/codified-vocabularies/">II · Movement language</a></strong> — how vocabularies of movement
+  get built, taught, described, and — the open frontier — discovered by machines from video.</li>
+<li><strong><a href="writing/notation-systems/">III · Writing it down</a></strong> — Labanotation, Benesh, motif
+  notation; video and digital scores.</li>
+<li><strong><a href="music/choreomusicology/">IV · Music and dance</a></strong> — both directions of the marriage:
+  choreographers using music, composers writing for bodies.</li>
+<li><strong><a href="systems/chance-and-rules/">V · Chance, systems, algorithms</a></strong> — Cunningham to code: the
+  generative tradition and the architecture it converged on.</li>
+<li><strong><a href="staged/costume-history/">VI · The staged body</a></strong> — costume, props, environment, light.</li>
+<li><strong><a href="synthetic/plausible-body/">VII · The synthetic dancer</a></strong> — the plausible body, motion
+  capture, movement generation, rendering, the pipeline end to end.</li>
+<li><strong><a href="shelf/">VIII · The shelf</a></strong> — reference pages on the choreographers themselves
+  (first wave: 24 pages).</li>
 </ul>
 <h2 id="available-now">Available now<a class="headerlink" href="#available-now" title="Permanent link">&para;</a></h2>
 <p><strong>The territory</strong> (read in order):</p>
@@ -3144,6 +3240,46 @@ header, contributions at length, and the major works described.</p>
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Welcome
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="territory/what-dance-is/" class="md-footer__link md-footer__link--next" aria-label="Next: What dance is; what choreography is">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                What dance is; what choreography is
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -3169,7 +3305,7 @@ header, contributions at length, and the major works described.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "toc.follow", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
