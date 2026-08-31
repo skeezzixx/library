@@ -22,3 +22,24 @@
 .md-footer__title {
   white-space: normal;
 }
+
+/* Rules — skimmable conventions, marked in source as **…**{ .rule } and compiled into each
+   chapter's "The rules" list and the subject rulebook by scripts/gen_library_rules.py.
+   Accent colour + a leading § so the eye can pick them out of a paragraph in both palettes. */
+.md-typeset strong.rule {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+.md-typeset strong.rule::before {
+  content: "§ ";
+  font-weight: 400;
+  opacity: 0.75;
+}
+.md-typeset li > strong.rule::before {
+  opacity: 0.55;
+}
+.md-typeset p.rules-foot {
+  font-size: 0.78rem;
+  opacity: 0.72;
+  margin-top: -0.4rem;
+}
